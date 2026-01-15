@@ -17,7 +17,7 @@ OPENEDX_EXTRA_PIP_REQUIREMENTS:
 Or, if you prefer to install directly from Git:
 ```
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
-- git+https://github.com/citynetwork/markdown-xblock.git@v2.2.0
+- git+https://github.com/cleura/markdown-xblock.git@v2.2.0
 ```
 For additional information, please refer to the official [documentation](https://docs.tutor.edly.io/configuration.html#open-edx-customisation).
 
