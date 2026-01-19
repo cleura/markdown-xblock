@@ -42,9 +42,10 @@ setup(
     ],
     python_requires='>=3.11',
     install_requires=[
-        'XBlock<5',
+        'XBlock>=5.2,<5.3',
         'markdown2>=2.3.9',
         'Pygments>=2.0.1',
+        'lxml-html-clean>=0.4.3'
     ],
     setup_requires=[
         'setuptools-scm',
