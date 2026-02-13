@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm[toml]>=7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-xblock"
+dynamic = ["version"]
+dependencies = [
+    "XBlock>=5.2,<5.3",
+    "markdown2>=2.3.9",
+    "Pygments>=2.0.1",
+    "lxml-html-clean>=0.4.3"
+]
+requires-python = ">=3.11"
+description = "Markdown XBlock provides editing course content in Markdown."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Intended Audience :: Education",
+    "Topic :: Education :: Computer Aided Instruction (CAI)",
+    "Topic :: Education",
+]
+
+[project.urls]
+Repository = "https://github.com/cleura/markdown-xblock"
+
+[project.entry-points."xblock.v1"]
+markdown = "markdown_xblock:MarkdownXBlock"
+
+[tool.setuptools_scm]
+
+[tool.setuptools]
+packages = { find = {} }
+
+[tool.setuptools.package-data]
+markdown_xblock = [
+  "static/**",
+  "public/**"
+]
