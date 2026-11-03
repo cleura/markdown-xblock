@@ -7,6 +7,7 @@ name = "markdown-xblock"
 dynamic = ["version"]
 dependencies = [
     "XBlock>=5.2,<7",
+    "Django>=4.2",
     "markdown2>=2.5.4",
     "Pygments>=2.0.1",
 ]
