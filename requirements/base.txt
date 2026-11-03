@@ -2,7 +2,6 @@
 
 xblock-sdk
 django-statici18n<=2.7.1
-edx-i18n-tools<=2.0
 Mako<=1.3.12
 bleach<=6.3.0
 django<=5.2

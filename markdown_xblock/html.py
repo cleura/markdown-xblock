@@ -2,9 +2,9 @@
 
 import logging
 import os
+from pathlib import Path
 
 import markdown2
-from path import Path as path
 from django.conf import settings as django_settings
 from xblock.core import XBlock
 from xblock.fields import List, Scope, String
@@ -292,7 +292,7 @@ class MarkdownXBlock(StudioEditableXBlockMixin, XBlockWithSettingsMixin, XBlock)
             category='markdown',
             url_path=location.block_id.replace(':', '/')
         )
-        base = path(pointer_path).dirname()
+        base = str(Path(pointer_path).parent)
         filepath = u"{base}/{name}.md".format(base=base, name=filename)
 
         with runtime.resources_fs.open(filepath, encoding='utf-8') as infile:
@@ -326,7 +326,7 @@ class MarkdownXBlock(StudioEditableXBlockMixin, XBlockWithSettingsMixin, XBlock)
             filestream.write(markdown_data)
 
         # Write out the markdown file name
-        filename = path(pathname).basename()
+        filename = Path(pathname).name
 
         node.tag = self.category
         node.set("filename", filename)
