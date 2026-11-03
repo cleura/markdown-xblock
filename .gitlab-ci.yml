@@ -1,13 +1,19 @@
+before_script:
+   - pip install tox
+
 stages:
   - build
   - report
 
-py38:
-  image: python:3.8
+build:
+  image: python:$python_version
+  parallel:
+    matrix:
+      - python_version: ["3.11", "3.12", "3.13", "3.14"]
   stage: build
   script:
     - pip install tox
-    - tox -e py38,flake8
+    - tox
   artifacts:
     paths:
       - .coverage*
@@ -17,10 +23,7 @@ coverage:
   image: python:3
   stage: report
   script:
-    - pip install coverage
-    - python -m coverage combine
-    - python -m coverage html
-    - python -m coverage report
+    - tox -e report
   coverage: '/TOTAL.*\s+(\d+\.\d+%)$/'
   artifacts:
     paths:
