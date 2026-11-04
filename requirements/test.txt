@@ -4,6 +4,7 @@ lazy<=1.6
 pytest-cov<=7.0.0
 mock<6
 
-# Github requirements
+# XBlock testing
+xblock-sdk
 openedx-django-pyfs>=3.8.0
 XBlock>=5.2,<7
