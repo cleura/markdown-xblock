@@ -11,13 +11,13 @@ and displays it as HTML.
 You may install the markdown-xblock to your Tutor environment by adding it to the `OPENEDX_EXTRA_PIP_REQUIREMENTS` list in `config.yml`:
 ```
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
-- markdown-xblock==2.4.0
+- markdown-xblock==2.4.1
 ```
 
 Or, if you prefer to install directly from Git:
 ```
 OPENEDX_EXTRA_PIP_REQUIREMENTS:
-- git+https://github.com/cleura/markdown-xblock.git@v2.4.0
+- git+https://github.com/cleura/markdown-xblock.git@v2.4.1
 ```
 For additional information, please refer to the official [documentation](https://docs.tutor.edly.io/configuration.html#open-edx-customisation).
 
