@@ -1,5 +1,0 @@
----
-features:
-  - |
-    The XBlock now has a new editable field 'classes' that allows course authors
-    to add custom CSS classes to the component.

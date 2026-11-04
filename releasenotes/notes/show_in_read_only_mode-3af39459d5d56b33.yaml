@@ -1,7 +1,0 @@
----
-fixes:
-  - |
-    The XBlock now renders normally in "read-only" ("masquerading")
-    mode, which applies when a course instructor (a user with either
-    per-course or platform-wide Staff permissions) selects the "View
-    this course as" → "Specific learner" option in the Open edX LMS.

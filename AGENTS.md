@@ -28,3 +28,8 @@ Prefer `.ai/tmp/` over the system temp directory.
 ### Tests
 
 Entry point is **`tox`**.
+
+## Changelog
+
+- Proposed changes to the [CHANGELOG.md](CHANGELOG.md) file must be under the `Unreleased` heading.
+- Do not retroactively change information about previously released versions.

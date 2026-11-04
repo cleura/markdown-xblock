@@ -1,5 +1,0 @@
----
-other:
-  - |
-    Markdown content is now written to a separate .md file during
-    course export and read from that file during course import.

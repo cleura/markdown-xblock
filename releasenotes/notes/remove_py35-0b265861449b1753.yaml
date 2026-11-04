@@ -1,9 +1,0 @@
----
-upgrade:
-  - |
-    This release removes support for Python 3.5. Do not upgrade to
-    this release on platforms still using Python 3.5.
-deprecations:
-  - |
-    With this release, all automated testing on Python 3.5 has been
-    removed, and Python 3.8 is the recommended Python release.

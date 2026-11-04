@@ -1,6 +1,0 @@
----
-other:
-  - |
-    The unit testing / linting / CI setup now uses tox and flake8, and
-    includes a .gitlab-ci.yml configuration for those who mirror the
-    repository to a GitLab instance.

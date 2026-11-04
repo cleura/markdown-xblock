@@ -1,6 +1,0 @@
----
-fixes:
-  - |
-    Course authors using Open edX Studio would not be able to use
-    syntax highlighting, due to missing JavaScript and CSS files for
-    CodeMirror. These files are now included.

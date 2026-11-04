@@ -1,8 +1,0 @@
----
-
-other:
-  - |
-    Each markdown file written during the course export
-    is no longer accompanied by an xml file with XBlock attributes.
-    The XBlock attributes are now included in the markdown node,
-    defined in a vertical block.

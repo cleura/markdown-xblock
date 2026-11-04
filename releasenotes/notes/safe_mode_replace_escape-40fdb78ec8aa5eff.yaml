@@ -1,7 +1,0 @@
----
-features:
-  - |
-    The XBlock settings now support the string values "replace" and "escape"
-    for safe_mode, just like the upstream Markdown2 library does. A Boolean
-    value of True is considered to be equivalent to "replace". A value of
-    False, None, or the empty string disables safe mode.

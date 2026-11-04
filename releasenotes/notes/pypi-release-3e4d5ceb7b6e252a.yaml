@@ -1,7 +1,0 @@
----
-prelude: >
-    This is the first PyPI release of this XBlock.
-other:
-  - |
-    This project now uses reno (https://pypi.org/project/reno/) to
-    manage its changelog and release notes.

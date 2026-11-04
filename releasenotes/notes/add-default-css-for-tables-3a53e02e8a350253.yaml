@@ -1,5 +1,0 @@
----
-other:
-  - |
-    Add default CSS for tables to match the current raw-HTML
-    XBlock table styling for better user experience.
