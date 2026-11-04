@@ -67,3 +67,6 @@ docs/_build
 # Cookiecutter
 output/
 dj-package/
+
+# Agentic coding
+.ai/
